@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Symmetry '25</title>
+    <link rel="icon" type="image/jpg" href="symmetry logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .registration-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .registration-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .registration-header h1 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .registration-steps {
+            margin-bottom: 2rem;
+        }
+        
+        .step {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .step h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .step h3 i {
+            margin-right: 10px;
+            color: #3498db;
+        }
+        
+        .registration-steps-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .registration-step {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .registration-step h4 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .step-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 6px;
+            margin: 1rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 1px solid #eee;
+        }
+        
+        .payment-button {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 2rem auto 0;
+            padding: 15px 30px;
+            background: #2ecc71;
+            color: white;
+            text-align: center;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .payment-button:hover {
+            background: #27ae60;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-top: 2rem;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .back-button i {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Ribbon (same as index.html) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="symmetry25.png" alt="Symmetry '25" class="logo-image">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#guidelines" class="nav-link">Event Guidelines</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#registration" class="nav-link">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="timetable.pdf" target="_blank" class="nav-link">
+                        <i class="fas fa-clock"></i> Timetable
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#faq" class="nav-link">FAQ</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="registration-container">
+            <div class="registration-header">
+                <h1>Registration for Symmetry '25</h1>
+                <p>Complete your registration by following these simple steps</p>
+            </div>
+            
+            <div class="registration-steps">
+                <div class="step">
+                    <h3><i class="fas fa-user-check"></i> Check Eligibility</h3>
+                    <p>This event is open to all undergraduate and postgraduate students from recognized institutions. Please ensure you have a valid student ID for verification at the event.</p>
+                </div>
+                
+                <div class="step">
+                    <h3><i class="fas fa-calendar-check"></i> Registration Deadlines</h3>
+                    <p><strong> Registration:</strong> September 15, 2025 (₹120)</p>
+                    <p><em>Fee includes access to all events and lunch, However you need to enroll yourself for the events of your choice individually.</em></p>
+                </div>
+                
+                <div class="step">
+                    <h3><i class="fas fa-list-ol"></i> Step by Step Registration Guide</h3>
+                    <div class="registration-steps-container">
+                        <div class="registration-step">
+                            <h4>1. Register Button</h4>
+                            <img src="step1.png" alt="Register Button" class="step-image">
+                            <p>Click on the 'Register for Symmetry' button to begin your registration process.</p>
+                        </div>
+                        
+                        <div class="registration-step">
+                            <h4>2. Payment Gateway</h4>
+                            <img src="step2.png" alt="Payment Gateway" class="step-image">
+                            <p>You will be redirected to our secure payment gateway to complete your registration fee payment.</p>
+                        </div>
+                        
+                        <div class="registration-step">
+                            <h4>3. Payment Procedure</h4>
+                            <img src="step3.png" alt="Payment Procedure" class="step-image">
+                            <p>Follow the payment instructions to complete your transaction. You can use UPI, credit/debit cards, or net banking.</p>
+                        </div>
+                        
+                        <div class="registration-step">
+                            <h4>4. Registration for Symmetry</h4>
+                            <img src="step4.png" alt="Registration Form" class="step-image">
+                            <p>After payment, you'll be directed to the registration form. Fill in all required details accurately.</p>
+                        </div>
+                        
+                        <div class="registration-step">
+                            <h4>5. Event Registration</h4>
+                            <img src="step5.png" alt="Event Registration" class="step-image">
+                            <p>Select and register for the events you wish to participate in from the available options.</p>
+                        </div>
+                        
+                        <div class="registration-step">
+                            <h4>6. For Any Queries</h4>
+                            <img src="step6.png" alt="Contact Information" class="step-image">
+                            <p>If you have any questions or need assistance, please refer to the contact information provided below or email us at [contact email].</p>
+                        </div>
+                    </div>
+                    <div class="steps-text">
+                        <ol>
+                            <li>Complete the payment following the instructions in the payment gateway</li>
+                            <li>You will recieve a confirmation email with your registration details</li>
+                            <li>Store the copy of the receipt for future reference</li>
+                            <li>Click on the Register for Symmetry button to complete your registration</li>
+                            <li>You will have to submit a copy of your college ID card and the payment receipt in the google form</li>
+                            <li>You will receive a confirmation email with your registration details</li>
+                            <li>Click on the event section in the navigation bar or to main page to enroll for the events of your choice as per the given Guidelines</li>
+                            <li>A tutorial video of how to register for symmetry is attached above, please watch it to understand the process</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <h3><i class="fas fa-credit-card"></i> Payment Information</h3>
+                    <p>Click the payment button below to proceed to our secure payment gateway. You can pay using:</p>
+                    <ul>
+                        <li>Credit/Debit Cards</li>
+                        <li>Net Banking</li>
+                        <li>UPI</li>
+                        <li>Wallets (PhonePe, Paytm, etc.)</li>
+                    </ul>
+                    <p>After successful payment, you'll receive a confirmation email with your registration details.</p>
+                </div>
+                
+                <button class="payment-button" id="proceedToPayment">
+                    <i class="fas fa-lock"></i> Proceed to Payment
+                </button>
+                
+                <a href="#" class="payment-button" id="registerForSymmetry" style="background: #3498db; margin-top: 1rem;">
+                    <i class="fas fa-user-plus"></i> Register for Symmetry
+                </a>
+                
+                <a href="index.html" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('proceedToPayment').addEventListener('click', function() {
+            // Replace with your actual payment gateway URL
+            window.location.href = 'https://presiuniv.ac.in/web/mathematicssymmetry25.php';
+        });
+        
+        document.getElementById('registerForSymmetry').addEventListener('click', function() {
+            // Redirect to the Google Form
+            window.location.href = 'https://forms.gle/SC4HCD7vFvHDZ4ns9';
+        });
+        
+        // Mobile menu toggle (same as in index.html)
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
