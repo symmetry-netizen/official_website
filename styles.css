@@ -649,7 +649,7 @@ overflow: hidden;
 /* Guidelines for Registration Section */
 .registration-guidelines {
     padding: 5rem 0;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.5);;
 }
 
 .guidelines-content {
